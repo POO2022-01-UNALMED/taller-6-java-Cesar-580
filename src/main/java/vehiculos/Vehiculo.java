@@ -11,7 +11,9 @@ public class Vehiculo {
 	private String traccion;
 	private Fabricante fabricante;
 	private static int CantidadVehiculos;
-	public static ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
+	static {
+		vehiculos = new ArrayList<>();
+	}
 	
 	public Vehiculo (String placa,int puertas,int velocidadMaxima,String nombre,int precio,int peso,String traccion,Fabricante fabricante) {
 		this.placa = placa;
@@ -23,7 +25,7 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		Vehiculo.CantidadVehiculos += 1;
-		Vehiculo.vehiculos.add(this);
+		vehiculos.add(this);
 	}
 	
 
@@ -73,7 +75,7 @@ public class Vehiculo {
 	public int getPrecio() {
 		return this.precio;
 	}
-	public void setPrecio(String precio) {
+	public void setPrecio(int precio) {
 		this.precio = precio;
 	}	
 	
@@ -81,7 +83,7 @@ public class Vehiculo {
 	public int getPeso() {
 		return this.peso;
 	}
-	public void setPeso(String peso) {
+	public void setPeso(int peso) {
 		this.peso = peso;
 	}
 	
@@ -97,7 +99,7 @@ public class Vehiculo {
 	public Fabricante getFabricante() {
 		return this.fabricante;
 	}
-	public void setFabricanten(String fabricante) {
+	public void setFabricanten(Fabricante fabricante) {
 		this.fabricante = fabricante;
 	}
 }
