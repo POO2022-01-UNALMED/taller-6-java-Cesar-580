@@ -10,7 +10,7 @@ public class Vehiculo {
 	private int peso;
 	private String traccion;
 	private Fabricante fabricante;
-	private static int CantidadVehiculos;
+	private static int cantidadVehiculos;
 	static ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
 	
 	public Vehiculo (String placa,int puertas,int velocidadMaxima,String nombre,int precio,int peso,String traccion,Fabricante fabricante) {
@@ -22,7 +22,7 @@ public class Vehiculo {
 		this.peso = peso;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
-		Vehiculo.CantidadVehiculos += 1;
+		cantidadVehiculos++;
 		vehiculos.add(this);
 	}
 	
@@ -102,10 +102,10 @@ public class Vehiculo {
 	}
 	//	Metodos get-set (cantidadVehiculos)
 	public static void setCantidadVehiculos(int cantidadVehiculos) {
-		Vehiculo.CantidadVehiculos = cantidadVehiculos;
+		Vehiculo.cantidadVehiculos = cantidadVehiculos;
 	}
 	public int getCantidadVehiculos() {
-		return CantidadVehiculos;
+		return cantidadVehiculos;
 	}
 	
 }
