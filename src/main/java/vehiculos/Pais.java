@@ -18,13 +18,6 @@ public class Pais {
 		this.nombre = nombre;
 	}
 	
-//	Lógica.
-	
-//Crear un diccionario "masvendidos" agregar al diccionario el pais por fabricante
-//Pais pais = vehiculo.getFabricante().getPais();. Comparar si el valor ya está en el diccionario "diccionario.containsKey(pais)"
-//si si le suma uno al key masVendido.put(pais, masVendido.get(pais)+1); , si no lo agrega con put
-//
-//Luego el maximo en ese diccionario
 	
 	public static Pais paisMasVendedor() {
 		// Diccionario

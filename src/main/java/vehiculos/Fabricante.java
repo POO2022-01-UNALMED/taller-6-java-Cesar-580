@@ -28,15 +28,7 @@ public class Fabricante {
 	public setPais(Pais pais) {
 		this.pais = pais;
 	}
-	
-	//	Lógica.
-	
-	//Crear un diccionario "masvendidos" agregar al diccionario el pais por fabricante
-	//Fabricante  fabricante = vehiculo.getFabricante();. Comparar si el valor ya está en el diccionario "diccionario.containsKey(fabricante)"
-	//si si le suma uno al key masVendido.put(pais, masVendido.get(pais)+1); , si no lo agrega con put
-	//
-	//Luego el maximo en ese diccionario
-	
+
 	public static Fabricante fabricaMasVendedor() {
 		// Diccionario
 		Map<Fabricante,Integer> diccMasVendidosFab = new HashMap<Fabricante,Integer>();
