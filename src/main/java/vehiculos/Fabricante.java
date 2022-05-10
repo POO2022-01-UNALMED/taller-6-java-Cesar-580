@@ -17,7 +17,7 @@ public class Fabricante {
 	public String getNombre() {
 		return this.nombre;
 	}
-	public setNombre(String nombre) {
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	
@@ -25,7 +25,7 @@ public class Fabricante {
 	public Pais getPais() {
 		return this.nombre;
 	}
-	public setPais(Pais pais) {
+	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
 
