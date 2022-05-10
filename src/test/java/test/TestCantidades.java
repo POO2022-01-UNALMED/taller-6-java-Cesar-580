@@ -33,6 +33,7 @@ public class TestCantidades {
 	@Test
    	public void testCantidadVehiculos(){
 		assertEquals(Vehiculo.getCantidadVehiculos() , 4, "Hay un problema al contabilizar el numero de vehiculos creados");
+		System.out.println(Vehiculo.getCantidadVehiculos());
     }
 	
 	@Test
