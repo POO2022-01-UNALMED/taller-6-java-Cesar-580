@@ -30,7 +30,7 @@ public class Fabricante {
 		this.pais = pais;
 	}
 
-	public static Fabricante fabricaMasVendedor() {
+	public static Fabricante fabricaMayorVentas() {
 		// Diccionario
 		Map<Fabricante,Integer> diccMasVendidosFab = new HashMap<Fabricante,Integer>();
 		
