@@ -47,10 +47,10 @@ public class Fabricante {
 		int maximoF = 0;
 		Fabricante fabricaMasVendedora = null;
 		
-		for(Fabricante fabrica:diccMasVendidosFab.keySet()) {			//keySet() -> Retorna todas las claves de un diccionario
-			if(diccMasVendidosFab.get(fabricante) > maximoF) {
-				maximoF = diccMasVendidosFab.get(fabrica);
-				fabricaMasVendedora = fabrica;
+		for(Fabricante i:diccMasVendidosFab.keySet()) {			//keySet() -> Retorna todas las claves de un diccionario
+			if(diccMasVendidosFab.get(i) > maximoF) {
+				maximoF = diccMasVendidosFab.get(i);
+				fabricaMasVendedora = i;
 			}
 		}
 		
