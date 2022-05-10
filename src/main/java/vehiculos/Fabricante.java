@@ -23,7 +23,7 @@ public class Fabricante {
 	
 	//	Metodos get-set (pais)
 	public Pais getPais() {
-		return this.nombre;
+		return this.pais;
 	}
 	public void setPais(Pais pais) {
 		this.pais = pais;
