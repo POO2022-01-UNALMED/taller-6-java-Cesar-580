@@ -33,10 +33,10 @@ public class Fabricante {
 		// Diccionario
 		Map<Fabricante,Integer> diccMasVendidosFab = new HashMap<Fabricante,Integer>();
 		
-		for(Vehiculos vehiculo:Vehiculo.vehiculos) {
+		for(Vehiculo vehiculo:Vehiculo.vehiculos) {
 			Fabricante fabricante = vehiculo.getFabricante();
 			if(diccMasVendidosFab.containsKey(fabricante)) {
-				diccMasVendidosFab.put(fabricante, masVendido.get(fabricante)+1);
+				diccMasVendidosFab.put(fabricante, diccMasVendidosFab.get(fabricante)+1);
 			}else {
 				diccMasVendidosFab.put(fabricante, 1);
 			}

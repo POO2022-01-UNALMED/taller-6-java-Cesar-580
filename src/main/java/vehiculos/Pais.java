@@ -23,10 +23,10 @@ public class Pais {
 		// Diccionario
 		Map<Pais,Integer> diccMasVendidos = new HashMap<Pais,Integer>();
 		
-		for(Vehiculos vehiculo:Vehiculo.vehiculos) {
+		for(Vehiculo vehiculo:Vehiculo.vehiculos) {
 			Pais pais = vehiculo.getFabricante().getPais();
 			if(diccMasVendidos.containsKey(pais)) {
-				diccMasVendidos.put(pais, masVendido.get(pais)+1);
+				diccMasVendidos.put(pais, diccMasVendidos.get(pais)+1);
 			}else {
 				diccMasVendidos.put(pais, 1);
 			}
