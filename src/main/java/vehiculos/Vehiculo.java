@@ -100,4 +100,12 @@ public class Vehiculo {
 	public void setFabricanten(Fabricante fabricante) {
 		this.fabricante = fabricante;
 	}
+	//	Metodos get-set (cantidadVehiculos)
+	public static void setCantidadVehiculos(int cantidadVehiculos) {
+		Vehiculo.CantidadVehiculos = cantidadVehiculos;
+	}
+	public int getCantidadVehiculos() {
+		return CantidadVehiculos;
+	}
+	
 }
