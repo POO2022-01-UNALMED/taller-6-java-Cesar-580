@@ -10,7 +10,7 @@ public class Vehiculo {
 	private int peso;
 	private String traccion;
 	private Fabricante fabricante;
-	private static int cantidadVehiculos;
+	public static int cantidadVehiculos;
 	static ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
 	
 	public Vehiculo (String placa,int puertas,int velocidadMaxima,String nombre,int precio,int peso,String traccion,Fabricante fabricante) {
@@ -22,8 +22,8 @@ public class Vehiculo {
 		this.peso = peso;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
-		cantidadVehiculos++;
 		vehiculos.add(this);
+		cantidadVehiculos++;
 	}
 	
 
