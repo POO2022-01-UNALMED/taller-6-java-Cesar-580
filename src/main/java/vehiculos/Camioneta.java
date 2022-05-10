@@ -6,7 +6,7 @@ public class Camioneta extends Vehiculo{
 	public static int cantidadCamionetas;
 
 	
-	public Camioneta (String placa,int puertas,String nombre,int precio,int peso,Fabricante fabricante,int ejes) {
+	public Camioneta (String placa,int puertas,String nombre,int precio,int peso,Fabricante fabricante,boolean volco) {
 		super(placa,puertas,90,nombre,precio,peso,"4X4",fabricante);	// Se toma del constructor padre los atributos que ya existian en el.
 		this.volco = volco;
 		Camioneta.cantidadCamionetas += 1;
