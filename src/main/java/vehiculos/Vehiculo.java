@@ -11,6 +11,7 @@ public class Vehiculo {
 	private String traccion;
 	private Fabricante fabricante;
 	private static int CantidadVehiculos;
+	public static List<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
 	
 	public Vehiculo (String placa,int puertas,int velocidadMaxima,String nombre,int precio,int peso,String traccion,Fabricante fabricante) {
 		this.placa = placa;
@@ -22,6 +23,7 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		Vehiculo.CantidadVehiculos += 1;
+		Vehiculo.vehiculos.add(this);
 	}
 	
 
